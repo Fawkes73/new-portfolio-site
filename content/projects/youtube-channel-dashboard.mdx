@@ -1,0 +1,35 @@
+---
+title: "YouTube Channel Dashboard"
+description: "A YouTube channel dashboard for a football live-stream channel — analytics, a live match stream, a video library, and viewer comments."
+date: "2026-08-01"
+tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Recharts", "Material UI"]
+category: "Full-Stack"
+status: "Shipped"
+cover: "/images/projects/youtube-dashboard/cover-dark.png"
+images:
+  - "/images/projects/youtube-dashboard/cover-dark.png"
+  - "/images/projects/youtube-dashboard/livestream.png"
+  - "/images/projects/youtube-dashboard/cover-light.png"
+github: "https://github.com/Fawkes73/dash-app"
+featured: true
+---
+
+## Overview
+
+A channel dashboard built around a football live-stream YouTube channel: channel-level analytics, a live match view, a video library, and viewer comments — the kind of internal tool a channel operator would actually use day to day.
+
+## Build
+
+- **Channel Overview** — subscribers, total views, live viewer count, watch time, and videos published, plus a views-by-category chart; several stats are computed live from the underlying video/comment data rather than hardcoded
+- **Live Stream** — a YouTube embed slot that falls back to a broadcast-style placeholder (not a random video) with live score, match stats, and an event feed
+- **Videos** — a paginated video library with category badges and view/duration metadata
+- **Comments** — YouTube-style viewer comments with likes and relative timestamps
+- Full light/dark theme across the whole app, including a dedicated always-dark token for video/thumbnail surfaces so they never turn white in light mode
+
+## Tech Stack
+
+Next.js (App Router) · TypeScript · Tailwind CSS v4 · shadcn/ui · Recharts · Material UI
+
+## Links
+
+- GitHub: [Fawkes73/dash-app](https://github.com/Fawkes73/dash-app)
