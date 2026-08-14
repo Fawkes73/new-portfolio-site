@@ -11,8 +11,7 @@ export const siteConfig = {
     "Software Developer and Independent Builder with hands-on experience across web, mobile, desktop, game, backend, database, blockchain, and application development. Comfortable moving across technologies and domains, learning new tools quickly, and using AI-assisted development to accelerate prototyping, implementation, and iteration from idea to deployment.",
   location: "India",
 
-  // TODO: set your production domain
-  url: "https://TODO-yourdomain.com",
+  url: "https://mandar-surve-portfolio-2026.vercel.app",
 
   links: {
     github: "https://github.com/Fawkes73",
