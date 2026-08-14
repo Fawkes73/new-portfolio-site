@@ -4,61 +4,51 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Design & Product",
     skills: [
-      { name: "UI / UX Design", level: 90 },
-      { name: "Design Systems", level: 88 },
-      { name: "Prototyping & Interaction", level: 92 },
-      { name: "Product Strategy", level: 80 },
+      { name: "UI / UX Design" },
+      { name: "Design Systems" },
+      { name: "Prototyping & Interaction" },
+      { name: "Product Strategy" },
     ],
   },
   {
     category: "Frontend",
     skills: [
-      { name: "HTML & CSS", level: 95 },
-      { name: "JavaScript", level: 85 },
-      { name: "React.js", level: 90 },
-      { name: "Next.js", level: 88 },
+      { name: "HTML & CSS" },
+      { name: "JavaScript" },
+      { name: "React.js" },
+      { name: "Next.js" },
     ],
   },
   {
     category: "Full Stack & Backend",
     skills: [
-      { name: "Full Stack Development", level: 85 },
-      { name: "Node.js / Backend APIs", level: 80 },
-      { name: "Databases / SQL", level: 78 },
+      { name: "Full Stack Development" },
+      { name: "Node.js / Backend APIs" },
+      { name: "Databases / SQL" },
     ],
   },
   {
     category: "Programming Foundations",
-    skills: [
-      { name: "C Programming", level: 75 },
-      { name: "C++", level: 78 },
-      { name: "Java", level: 80 },
-    ],
+    skills: [{ name: "C Programming" }, { name: "C++" }, { name: "Java" }],
   },
   {
     category: "Game Development",
     skills: [
-      { name: "Unity (C#)", level: 80 },
-      { name: "Game Physics & Mechanics", level: 82 },
-      { name: "AI Logic / Gameplay Systems", level: 78 },
+      { name: "Unity (C#)" },
+      { name: "Game Physics & Mechanics" },
+      { name: "AI Logic / Gameplay Systems" },
     ],
   },
   {
     category: "Blockchain",
-    skills: [{ name: "Blockchain / Web3 Apps", level: 75 }],
+    skills: [{ name: "Blockchain / Web3 Apps" }],
   },
   {
     category: "Robotics, IoT & Mobile",
-    skills: [
-      { name: "Robotics / Arduino", level: 78 },
-      { name: "Android App Development", level: 70 },
-    ],
+    skills: [{ name: "Robotics / Arduino" }, { name: "Android App Development" }],
   },
   {
     category: "Systems & Optimization",
-    skills: [
-      { name: "Performance Optimization", level: 82 },
-      { name: "System Design & Architecture", level: 78 },
-    ],
+    skills: [{ name: "Performance Optimization" }, { name: "System Design & Architecture" }],
   },
 ];
