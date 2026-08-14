@@ -21,13 +21,7 @@ export default async function AboutPage() {
 
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-16 sm:px-8 sm:py-24">
-      <div className="grid gap-12 lg:grid-cols-[220px_1fr]">
-        {headings.length > 0 && (
-          <aside className="hidden lg:sticky lg:top-24 lg:block lg:max-h-[calc(100vh-8rem)] lg:self-start lg:overflow-y-auto">
-            <TableOfContents items={headings} />
-          </aside>
-        )}
-
+      <div className="grid gap-12 lg:grid-cols-[1fr_220px]">
         <div className="max-w-2xl">
           {compiled ? (
             <div>{compiled.content}</div>
@@ -37,6 +31,12 @@ export default async function AboutPage() {
             </p>
           )}
         </div>
+
+        {headings.length > 0 && (
+          <aside className="hidden lg:sticky lg:top-24 lg:block lg:max-h-[calc(100vh-8rem)] lg:self-start lg:overflow-y-auto">
+            <TableOfContents items={headings} />
+          </aside>
+        )}
       </div>
     </div>
   );

@@ -27,13 +27,13 @@ export const mdxComponents: MDXComponents = {
     <blockquote className={cn("mt-6 border-l-2 border-accent pl-4 italic text-muted", className)} {...props} />
   ),
   code: ({ className, ...props }) => (
-    <code className={cn("rounded bg-surface px-1.5 py-0.5 font-mono text-[0.85em] text-foreground", className)} {...props} />
+    <code className={cn("rounded-full bg-surface px-2.5 py-0.5 font-mono text-[0.85em] text-foreground", className)} {...props} />
   ),
   pre: ({ className, ...props }) => (
-    <pre className={cn("mt-6 overflow-x-auto rounded-lg bg-[#0c0a09] p-4 text-sm", className)} {...props} />
+    <pre className={cn("mt-6 overflow-x-auto rounded-3xl bg-[#0c0a09] p-5 text-sm", className)} {...props} />
   ),
   img: ({ src, alt = "" }) => (
-    <span className="mt-6 block overflow-hidden rounded-lg bg-surface">
+    <span className="mt-6 block overflow-hidden rounded-[28px] bg-surface">
       <Image src={typeof src === "string" ? src : ""} alt={alt} width={1200} height={675} className="h-auto w-full" />
     </span>
   ),

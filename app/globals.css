@@ -85,6 +85,16 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Hide the scrollbar everywhere while keeping scroll functional */
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   ::selection {
     background: color-mix(in srgb, var(--accent) 30%, transparent);
   }

@@ -6,7 +6,7 @@ import type { NavItem, WorkExperience } from "@/types";
  */
 export const siteConfig = {
   name: "Mandar Surve",
-  title: "Full-Stack Developer & Indie Builder",
+  title: "Software Developer | Product Builder | Indie Game Developer",
   description:
     "Software Developer and Independent Builder with hands-on experience across web, mobile, desktop, game, backend, database, blockchain, and application development. Comfortable moving across technologies and domains, learning new tools quickly, and using AI-assisted development to accelerate prototyping, implementation, and iteration from idea to deployment.",
   location: "India",
@@ -16,10 +16,10 @@ export const siteConfig = {
 
   links: {
     github: "https://github.com/Fawkes73",
-    linkedin: "", // TODO
+    linkedin: "https://www.linkedin.com/in/mandar-surve-409828212", // TODO
     twitter: "", // TODO
-    youtube: "", // TODO
-    email: "", // TODO
+    youtube: "https://www.youtube.com/@codingmarathiyt", // TODO
+    blog: "codingmarathi.com", // TODO
     resume: "", // TODO
   },
 
@@ -32,35 +32,27 @@ export const siteConfig = {
 
   categories: ["All", "Frontend", "Full-Stack", "Mobile", "SaaS", "Games", "Other"] as const,
 
-  // No traditional employer history — as an independent builder, "work experience"
-  // is the shipped project record itself. TODO: replace/extend with real employer
-  // entries if that ever applies, using the same shape.
+  // TODO: confirm exact month for both entries below — currently only years are confirmed.
   workExperience: [
     {
-      company: "Developer Hub",
-      role: "Independent Developer",
-      timeframe: "2025",
+      company: "Aerus Infotech, Airoli",
+      role: "Java Developer Intern",
+      timeframe: "2019",
       achievements: [
-        "Built a full workspace dashboard — projects, docs, snippets, API explorer, tools, bookmarks — each with real content",
-        "Shipped resizable panel layout and full light/dark theming with next-themes",
+        "Built a movie ticket booking website using Java and MySQL, implementing the DAO (Data Access Object) pattern for database access.",
+        "Developed database operations for managing movie and booking-related data.",
+        "Applied object-oriented programming and structured application architecture to build a maintainable web application.",
       ],
     },
     {
-      company: "YouTube Channel Dashboard",
-      role: "Independent Developer",
+      company: "5CentCDN Inc, Mumbai",
+      role: "Next.js Frontend Developer",
       timeframe: "2025",
       achievements: [
-        "Built channel analytics computed live from underlying video/comment data, not hardcoded",
-        "Shipped a live-stream view with match stats, an event feed, and a paginated video library",
-      ],
-    },
-    {
-      company: "Modern Login Page Template",
-      role: "Independent Developer",
-      timeframe: "2025",
-      achievements: [
-        "Designed a reusable split-screen sign-in template with a CSS gradient/dot-grid panel — no stock photography to license",
-        "Shipped full light/dark theming across the entire layout, including the decorative panel",
+        "Built internal developer tooling — multi-section dashboards, workspace utilities, and admin interfaces — end to end with Next.js, TypeScript, and Tailwind CSS",
+        "Built data-driven analytics dashboards with live, real-time-computed metrics and interactive charts, not static/hardcoded numbers",
+        "Implemented authentication and sign-in flows with full light/dark theming across every surface",
+        "Delivered all of the above end to end — UI, state, and integration — within a one-month engagement",
       ],
     },
   ] satisfies WorkExperience[],

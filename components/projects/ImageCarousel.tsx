@@ -46,7 +46,7 @@ function CarouselStack({
     <div
       onMouseEnter={() => onHoverChange?.(true)}
       onMouseLeave={() => onHoverChange?.(false)}
-      className={cn("relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface", className)}
+      className={cn("relative aspect-[16/10] overflow-hidden rounded-4xl bg-surface", className)}
     >
       {images.map((src, index) => (
         <div

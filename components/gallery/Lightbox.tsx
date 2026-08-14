@@ -76,7 +76,7 @@ export function Lightbox({
       )}
 
       <div className="relative flex max-h-[85vh] max-w-4xl flex-col items-center" onClick={(event) => event.stopPropagation()}>
-        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className="max-h-[75vh] w-auto rounded-lg object-contain" />
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className="max-h-[75vh] w-auto rounded-[28px] object-contain" />
         <p className="mt-3 text-center text-sm text-white/60">
           {image.alt} · {index + 1} / {images.length}
         </p>

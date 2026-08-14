@@ -16,7 +16,7 @@ export function MasonryGrid({ images }: { images: GalleryItem[] }) {
             key={image.src}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className="group block w-full overflow-hidden rounded-lg bg-surface transition-colors duration-200"
+            className="group block w-full overflow-hidden rounded-[28px] bg-surface transition-colors duration-200"
             style={{ breakInside: "avoid" }}
           >
             <Image
