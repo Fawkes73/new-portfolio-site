@@ -38,6 +38,8 @@ yarn-error.log*
 
 # local Claude Code tooling state (not project content)
 .claude/
+CLAUDE.md
+TODO.md
 
 # typescript
 *.tsbuildinfo
