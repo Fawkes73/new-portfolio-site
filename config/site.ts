@@ -21,6 +21,7 @@ export const siteConfig = {
     youtube: "https://www.youtube.com/@codingmarathiyt", // TODO
     blog: "codingmarathi.com", // TODO
     resume: "", // TODO
+    email: "", // TODO
   },
 
   navigation: [

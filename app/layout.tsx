@@ -5,6 +5,7 @@ import { Providers } from "@/components/layout/Providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SiteBackground } from "@/components/layout/SiteBackground";
+import { NoCopyGuard } from "@/components/layout/NoCopyGuard";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <Providers>
+          <NoCopyGuard />
           <SiteBackground />
           <Header />
           <main className="flex-1">{children}</main>

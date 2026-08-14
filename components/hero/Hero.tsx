@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Github, Linkedin, Mail, Youtube, Globe2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
@@ -8,6 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { HeroBackground } from "@/components/hero/HeroBackground";
 import { ImageCarousel } from "@/components/projects/ImageCarousel";
 import { SkillsGrid } from "@/components/about/SkillsGrid";
+import { RunawayAvatar } from "@/components/hero/RunawayAvatar";
 import portrait from "@/public/images/hero/portrait.png";
 import type { Project } from "@/types";
 
@@ -26,9 +26,11 @@ export function Hero({ featuredProject }: { featuredProject?: Project }) {
       <div className="container-page relative grid gap-10 lg:grid-cols-[220px_1fr]">
         <Reveal>
           <div className="flex flex-row items-start gap-4 lg:flex-col">
-            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-border lg:h-32 lg:w-32">
-              <Image src={portrait} alt={siteConfig.name} fill sizes="128px" className="object-cover" priority />
-            </div>
+            <RunawayAvatar
+              src={portrait}
+              alt={siteConfig.name}
+              className="h-20 w-20 shrink-0 lg:h-40 lg:w-40"
+            />
             <div className="flex flex-row flex-wrap gap-2 lg:flex-col lg:items-start">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted">
                 <Globe2 className="h-3.5 w-3.5" /> {siteConfig.location}

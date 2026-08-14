@@ -73,42 +73,34 @@ export function HeroBackground() {
 
   return (
     <div ref={ref} aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-      {/* dot grid, fades toward the bottom so it blends into the page below rather than cutting off */}
-      <div
-        className="absolute inset-0 animate-fade-in opacity-[0.3]"
-        style={{
-          backgroundImage: "radial-gradient(var(--border) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-          maskImage: "linear-gradient(to bottom, black 0%, black 60%, transparent 100%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 60%, transparent 100%)",
-        }}
-      />
-
-      {/* Milky Way haze band, same diagonal as the star cluster below */}
-      <div
-        className="absolute inset-[-20%] animate-fade-in opacity-40"
-        style={{
-          background:
-            "linear-gradient(118deg, transparent 38%, color-mix(in srgb, var(--accent-hover) 18%, transparent) 48%, color-mix(in srgb, var(--foreground) 12%, transparent) 52%, color-mix(in srgb, var(--accent-2) 16%, transparent) 56%, transparent 66%)",
-          filter: "blur(24px)",
-        }}
-      />
-
-      {/* twinkling stars */}
-      {stars.map((star) => (
-        <span
-          key={star.id}
-          className="absolute rounded-full bg-foreground"
+      {/* night-sky effects — faded out in light theme via --star-opacity, since dark specks read as stray dots on a light background */}
+      <div className="absolute inset-0 transition-opacity duration-500" style={{ opacity: "var(--star-opacity, 1)" }}>
+        {/* Milky Way haze band, same diagonal as the star cluster below */}
+        <div
+          className="absolute inset-[-20%] animate-fade-in opacity-40"
           style={{
-            top: `${star.top}%`,
-            left: `${star.left}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: star.opacity,
-            animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
+            background:
+              "linear-gradient(118deg, transparent 38%, color-mix(in srgb, var(--accent-hover) 18%, transparent) 48%, color-mix(in srgb, var(--foreground) 12%, transparent) 52%, color-mix(in srgb, var(--accent-2) 16%, transparent) 56%, transparent 66%)",
+            filter: "blur(24px)",
           }}
         />
-      ))}
+
+        {/* twinkling stars */}
+        {stars.map((star) => (
+          <span
+            key={star.id}
+            className="absolute rounded-full bg-foreground"
+            style={{
+              top: `${star.top}%`,
+              left: `${star.left}%`,
+              width: `${star.size}px`,
+              height: `${star.size}px`,
+              opacity: star.opacity,
+              animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite`,
+            }}
+          />
+        ))}
+      </div>
 
       {/* cursor-follow glow */}
       <div
