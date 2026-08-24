@@ -82,6 +82,7 @@ export function RunawayAvatar({
           alt={alt}
           fill
           sizes="160px"
+          quality={100}
           draggable={false}
           priority
           className="object-cover transition-transform duration-500 group-hover:scale-110"
