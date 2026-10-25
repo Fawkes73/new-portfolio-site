@@ -7,6 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { HeroBackground } from "@/components/hero/HeroBackground";
 import { ImageCarousel } from "@/components/projects/ImageCarousel";
 import { SkillsGrid } from "@/components/about/SkillsGrid";
+import { GameJamSection } from "@/components/about/GameJamSection";
 import { RunawayAvatar } from "@/components/hero/RunawayAvatar";
 import portrait from "@/public/images/hero/portrait.png";
 import type { Project } from "@/types";
@@ -87,6 +88,8 @@ export function Hero({ featuredProject }: { featuredProject?: Project }) {
               </Button>
             </div>
           </Reveal>
+
+          <GameJamSection />
 
           {siteConfig.workExperience.length > 0 && (
             <Reveal delay={380}>

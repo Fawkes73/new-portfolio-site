@@ -25,15 +25,25 @@ export const siteConfig = {
 
   navigation: [
     { label: "Home", href: "/" },
+    { label: "Journey", href: "/game-journey" },
     { label: "About", href: "/about" },
     { label: "Work", href: "/work" },
     { label: "Gallery", href: "/gallery" },
   ] satisfies NavItem[],
 
-  categories: ["All", "Frontend", "Full-Stack", "Mobile", "SaaS", "Games", "Other"] as const,
+  categories: ["All", "Frontend", "Full-Stack", "Mobile", "SaaS", "Games", "VFX", "Other"] as const,
 
-  // TODO: confirm exact month for both entries below — currently only years are confirmed.
   workExperience: [
+    {
+      company: "ABC Studio",
+      role: "VFX Artist Intern",
+      timeframe: "2026 - Present",
+      achievements: [
+        "Build and implement visual effects, including small code changes to convert HDRP shaders to URP and create visual shaders.",
+        "Develop particle systems and create shaders, textures, and masks for VFX assets.",
+        "Create textures and masks in Krita, and use Material Maker to generate masks.",
+      ],
+    },
     {
       company: "Aerus Infotech, Airoli",
       role: "Java Developer Intern",
