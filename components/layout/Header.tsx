@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, User, LayoutGrid, Image as ImageIcon } from "lucide-react";
+import { Home, User, LayoutGrid, Image as ImageIcon, Gamepad2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { Clock } from "@/components/layout/Clock";
@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 
 const icons: Record<string, typeof Home> = {
   "/": Home,
+  "/game-journey": Gamepad2,
   "/about": User,
   "/work": LayoutGrid,
   "/gallery": ImageIcon,
