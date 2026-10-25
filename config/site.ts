@@ -35,13 +35,15 @@ export const siteConfig = {
 
   workExperience: [
     {
-      company: "ABC Studio",
+      company: "Epiko Studio",
       role: "VFX Artist Intern",
-      timeframe: "2026 - Present",
+      timeframe: "September 1st 2026 - Present",
       achievements: [
-        "Build and implement visual effects, including small code changes to convert HDRP shaders to URP and create visual shaders.",
-        "Develop particle systems and create shaders, textures, and masks for VFX assets.",
-        "Create textures and masks in Krita, and use Material Maker to generate masks.",
+        "Built real-time visual effects in Unity, developing practical skills in particle systems, shaders, materials, and VFX asset creation from the ground up.",
+        "Designed and refined particle systems, visual shaders, textures, and masks to create and enhance real-time visual effects.",
+        "Created custom textures and masks in Krita and generated procedural masks using Material Maker to support VFX workflows.",
+        "Configured shaders and materials by combining textures and masks to achieve the desired visual results.",
+        "Modified shader code to adapt HDRP shaders for URP as the project transitioned pipelines, updating effects to meet the new GDD requirements."
       ],
     },
     {
