@@ -3,7 +3,7 @@ export type NavItem = {
   href: string;
 };
 
-export type ProjectCategory = "Frontend" | "Full-Stack" | "Mobile" | "SaaS" | "Games" | "Other";
+export type ProjectCategory = "Frontend" | "Full-Stack" | "Mobile" | "SaaS" | "Games" | "VFX" | "Other";
 
 export type ProjectStatus = "Live" | "In Progress" | "Shipped" | "Archived";
 

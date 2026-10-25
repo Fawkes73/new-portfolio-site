@@ -1,0 +1,71 @@
+---
+title: "Crab Soup Chao Slicer3"
+description: "A 2D slicing game developed in Unity for the Bros Game Jam, combining food-slicing gameplay, blade VFX, and a browser-playable WebGL build."
+date: "2026-09-28"
+tags: ["Bros Game Jam", "Unity", "C#", "WebGL", "Slicing Mechanics", "VFX"]
+category: "Games"
+status: "Live"
+cover: "/images/Game/CrabSoupChaos_GamePlayeScreen.png"
+images:
+  - "/images/Game/CrabSoupChaos_GamePlayeScreen.png"
+  - "/images/Game/CrabSoupChaos_PauseScreen.png"
+  - "/images/Game/CrabSoupChaos_Logo.png"
+live: "https://surve-mandar.itch.io/crab-soup-chao-slicer3"
+featured: true
+---
+
+## Project Overview
+
+Crab Soup Chao Slicer3 (Crab Soup Chaos) is a fast-paced 2D slicing game developed in Unity for the Bros Game Jam. Players slice food items—including onions, crabs, okra, and eggs—while avoiding chilli hazards. I handled game development in a two-person team, collaborating with a 2D artist to bring the gameplay and visual assets together.
+
+The project challenged me to build a connected gameplay loop within a limited development window, apply VFX techniques to gameplay feedback, and troubleshoot the game's delivery in a browser environment.
+
+## Engineering the Gameplay Loop
+
+The core mechanic connects object spawning, blade interactions, sliceable items, hazards, player lives, scoring, and UI feedback. I implemented the gameplay systems needed to make these parts work together as a playable loop.
+
+### Systems I Implemented
+
+- Food-object spawning and gameplay interactions
+- Sliceable objects and blade interaction
+- Chilli hazards and game-over behaviour
+- Score and player-life feedback
+- Gameplay effects and visual feedback
+
+I treated these as related parts of the same player experience: slicing should register as an interaction, hazards should affect the game state, and the interface should communicate the outcome.
+
+## VFX Applied to Gameplay
+
+I created the blade visual effects and applied techniques from my VFX internship to make the slicing action more responsive and readable. The goal was to reinforce the player's action with immediate visual feedback, rather than add effects without a gameplay purpose.
+
+This was a separate game-jam project, and gave me a chance to apply VFX skills in the context of a mechanic I was implementing.
+
+## WebGL Browser Delivery
+
+Getting the Unity WebGL build to display correctly in its browser environment required investigating more than the in-game canvas settings. The game appeared constrained by the dimensions of the itch.io embed instead of displaying at the intended aspect ratio.
+
+I investigated the boundary between Unity's canvas configuration, the WebGL player, and the HTML/CSS container hosting it. This showed that the game’s rendering configuration and the webpage’s embed dimensions are separate parts of browser presentation; changing one does not necessarily resolve sizing constraints imposed by the other.
+
+The experience taught me to verify the delivered build in its target environment and investigate the whole presentation path—from the Unity project through the WebGL player to the browser embed—instead of assuming Editor behaviour guarantees the same result online.
+
+## Two-Person Development Under a Deadline
+
+This was a two-person project: I handled game development and mechanics, while collaborating with one 2D artist on the visual assets. With a game-jam submission deadline, we had to coordinate the gameplay and art, focus on the core experience, and keep progress directed toward a playable build.
+
+The small team meant I owned the development decisions for my part of the project while still coordinating closely with the artist. It was different from the larger team workflow of LaunchBox: here I had more direct ownership of implementation and prioritization, alongside cross-discipline collaboration.
+
+## What This Project Demonstrates
+
+- **Gameplay implementation:** Building the slicing interaction and connecting it with spawning, hazards, scoring, lives, and game state.
+- **VFX in context:** Applying techniques from my internship to provide feedback for a gameplay mechanic.
+- **Two-person collaboration:** Coordinating game development with a 2D artist.
+- **Platform troubleshooting:** Investigating WebGL presentation and canvas sizing in the browser embed.
+- **Deadline-driven delivery:** Prioritizing a playable game and verifying it in its target environment.
+
+## Technology
+
+Unity · C# · WebGL · 2D Game Development · Slicing Mechanics · VFX · Bros Game Jam 2026
+
+## Links
+
+- Open and play on itch.io: [Crab Soup Chao Slicer3](https://surve-mandar.itch.io/crab-soup-chao-slicer3)
